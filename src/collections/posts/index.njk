@@ -1,0 +1,30 @@
+---
+title: المدونة
+breadcrumb:
+- { label: "الرئيسية", url: "/" }
+- { label: "المدونة", url: "/pages/posts/" }
+permalink: "/pages/posts/"
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/page.njk" %}
+{% block pageContent %}
+
+<!-- Posts Grid Container -->
+<div class="container-fluid bg-light">
+    <div class="container pb-4">
+        <!-- Posts Loop -->
+        {% for post in collections.posts | reverse -%}
+            <!-- Single Post Card -->
+            {{ post.data.title }}
+            {{ post.data.featured_image }}
+            {{ post.data.description }}
+            {{ post.date }}
+            {{ post.data.author }}
+        {% else %}
+            <!-- No Posts Message -->
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

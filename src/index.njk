@@ -1,0 +1,326 @@
+---
+title: الصفحة الرئيسية
+description: ???
+---
+
+{% extends "layouts/home.njk" %}
+{% block homeContent %}
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="border bg-secondary rounded">
+                        <img src="https://www.theepicself.com/wp-content/uploads/2016/11/man-in-one-hand-handstand-in-front-of-beautiful-sunset-over-water-feeling-good.jpg" class="img-fluid w-100 rounded" alt="تدريب الجمباز والكاليسثينكس">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInRight" dir="rtl" data-wow-delay="0.3s">
+                    <h4 class="text-secondary sub-title fw-bold">{{ home.about.subtitle }}</h4>
+                    <h1 class="display-3 mb-4">{{ home.about.title }}</h1>
+                    <p>{{ home.about.description1 }}</p>
+                    <p class="mb-4">{{ home.about.description2 }}</p>
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="{{ home.about.buttonLink }}">{{ home.about.buttonText }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Counter Facts Start -->
+    <div class="container-fluid counter-facts py-5">
+        <div class="container">
+            <div class="row">
+                {% for item in home.stats.items %}
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s">
+                    <div class="counter">
+                        <div class="counter-icon w-100 d-flex align-items-center justify-content-center">
+                            <h3>{{ item.text }}</h3>
+                        </div>
+                        <div class="counter-content d-flex align-items-center justify-content-center mt-4">
+                            <span class="counter-value text-primary" data-toggle="counter-up">{{ item.number }}</span>
+                            <h4 class="text-primary mb-0 mx-1" style="font-weight: 600; font-size: 25px;">+</h4>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Counter Facts End -->
+
+    <!-- Training Start -->
+    <div class="container-fluid training py-5">
+        <div class="container py-5">
+            <div class="pb-5">
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.training.subtitle }}</h4>
+                        <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.training.title }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="training-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="training-img rounded-top">
+                        <img src="https://www.mensjournal.com/.image/w_3840,q_auto:good,c_fill,ar_16:9/MTk2MTM3MjEwNjQ5OTc4Mzcz/gettyimages-532416167-03652f02-1a86-4079-af22-118251f19041-c5a44fad4ca704c1bcfd481b67d27e309776b65a.jpg" class="img-fluid rounded-top h-100" alt="جمباز فني">
+                        <h1 class="fs-1 fw-bold bg-secondary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">01</h1>
+                    </div>
+                    <div class="rounded-bottom border border-top-0 p-4">
+                        <a href="#" class="h4 mb-3 d-block">جمباز</a>
+                        <p class="mb-3">برنامج متكامل للجمباز يشمل تدريبات قوية جدا للحركات الارضية والهوائية</p>
+                        <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="/programs/artistic-gymnastics">اقرأ المزيد</a>
+                    </div>
+                </div>
+                <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="training-img rounded-top">
+                        <img src="https://fitnesskit.de/cdn/shop/articles/Back_Lever_Calisthenics_Ubung_1600x.jpg?v=1733292172" class="img-fluid rounded-top h-100" alt="كاليسثينكس">
+                        <h1 class="fs-1 fw-bold bg-secondary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">02</h1>
+                    </div>
+                    <div class="rounded-bottom border border-top-0 p-4">
+                        <a href="#" class="h4 mb-3 d-block">كاليسثينكس</a>
+                        <p class="mb-3">تدريبات قوة باستخدام وزن الجسم لبناء القوة والمرونة والتحكم</p>
+                        <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="/programs/calisthenics">اقرأ المزيد</a>
+                    </div>
+                </div>
+                <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="training-img rounded-top">
+                        <img src="https://img.freepik.com/free-photo/full-shot-fit-man-doing-parkour_23-2150490225.jpg" class="img-fluid rounded-top h-100" alt="باركور">
+                        <h1 class="fs-1 fw-bold bg-secondary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">03</h1>
+                    </div>
+                    <div class="rounded-bottom border border-top-0 p-4">
+                        <a href="#" class="h4 mb-3 d-block">باركور</a>
+                        <p class="mb-3">برنامج متخصص في البراكور يجمع بين الرشاقة والقفزات الفنية</p>
+                        <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="/programs/rhythmic-gymnastics">اقرأ المزيد</a>
+                    </div>
+                </div>
+                <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="training-img rounded-top">
+                        <img src="https://nutrade.com.tr/cdn/shop/articles/Fitness-ile-Ilgili-Bilinmesi-Gerekenler.jpg?v=1701794880" class="img-fluid rounded-top h-100" alt="لياقة بدنية">
+                        <h1 class="fs-1 fw-bold bg-secondary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">04</h1>
+                    </div>
+                    <div class="rounded-bottom border border-top-0 p-4">
+                        <a href="#" class="h4 mb-3 d-block">فتنس</a>
+                        <p class="mb-3">برامج لياقة بدنية شاملة ومكثفة لتطوير جوانب القوة والتحمل والمرونة</p>
+                        <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="/programs/fitness">اقرأ المزيد</a>
+                    </div>
+                </div>
+                <div class="training-item bg-white rounded wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="training-img rounded-top">
+                        <img src="https://assets.gqindia.com/photos/5cdc0e49d0e160243a100354/16:9/w_2560%2Cc_limit/weight-workout.jpg" class="img-fluid rounded-top h-100" alt="كمال اجسام">
+                        <h1 class="fs-1 fw-bold bg-secondary text-white d-inline-block rounded p-2 position-absolute" style="top: 0; left: 0;">05</h1>
+                    </div>
+                    <div class="rounded-bottom border border-top-0 p-4">
+                        <a href="#" class="h4 mb-3 d-block">بناء اجسام</a>
+                        <p class="mb-3">برنامج شامل لتحسين شكل الجسم وتقوية العضلات وتنشيط الدورة الدموية</p>
+                        <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Training End -->
+
+    <!-- Movs Start -->
+    <div class="container-fluid blog bg-light py-5">
+        <div class="container pb-5">
+            <div class="pb-5 text-end">
+                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.movs.subtitle }}</h4>
+                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.movs.title }}</h1>
+            </div>
+
+            <div class="blog-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+
+                {% for item in home.movs.items %}
+                    <div class="blog-item bg-white border rounded wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-img rounded-top">
+                            <img src="{{ item.image }}" class="img-fluid rounded-top h-100" alt="تدريبات الجمباز للمبتدئين">
+                        </div>
+                        <div class="bg-light rounded-bottom p-4">
+                            <a href="#" class="h4 mb-3 d-block">{{ item.title }}</a>
+                            <p class="mb-3">{{ item.description }}</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="{{ item.buttonLink }}">{{ item.buttonText }}</a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Movs End -->
+
+    <!-- Video Gallery Start -->
+    <div class="container-fluid gallery py-5">
+        <div class="container pb-5">
+            <div class="pb-5 text-end">
+                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.gallery.subtitle }}</h4>
+                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.gallery.title }}</h1>
+            </div>
+            <div class="tab-class">
+                <ul class="nav nav-pills d-inline-flex justify-content-center pb-4">
+                    {% for tab in home.gallery.tabs %}
+                        <li class="nav-item bg-light border border-primary rounded-pill mb-4 wow fadeInUp" data-wow-delay="0.{{ loop.index }}s">
+                            <a class="d-flex py-2 px-5 rounded-pill {% if loop.first %}active{% endif %}" data-bs-toggle="pill" href="#{{ tab.id }}">
+                                <span class="text-dark">{{ tab.title }}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                <div class="tab-content">
+
+                    {% for tab in home.gallery.tabs %}
+                        <div id="{{ tab.id }}" class="tab-pane fade show {% if loop.first %}active{% endif %} p-0">
+
+                            <div class="row gx-2 gy-5">
+                                
+                                {% for mov in tab.movs %}
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="video h-100">
+                                    <img src="https://img.youtube.com/vi/{{ mov.youtubeId }}/hqdefault.jpg" 
+                                        class="img-fluid rounded w-100 h-100" 
+                                        style="object-fit: cover;" 
+                                        alt="{{ mov.title }}">
+                                    <button type="button" 
+                                            class="btn btn-play" 
+                                            data-bs-toggle="modal" 
+                                            data-src="https://www.youtube.com/embed/{{ mov.youtubeId }}" 
+                                            data-bs-target="#videoModal">
+                                        <span></span>
+                                    </button>
+                                    <p class="text-center mt-1">{{ mov.title }}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">عرض الفيديو</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Gallery End -->
+
+    <!-- Blog End -->
+     <div class="container-fluid events py-5">
+            <div class="container py-5">
+                <div class="pb-5">
+                    <div class="row g-4 align-items-end">
+                        <div class="col-12 text-end">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">{{ home.blog.subtitle }}</h4>
+                            <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">{{ home.blog.title }}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- I want here to loop blog from home.json -->
+                    {% for item in home.blog.posts %}
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s" style="visibility: visible; animation-delay: {{ loop.index0 * 0.2 }}s; animation-name: fadeInUp;">
+                            <div class="event-item border rounded">
+                                <div class="position-relative">
+                                    <img src="{{ item.image }}" class="img-fluid rounded-top w-100" alt="Image">
+                                    <hr class="p-0 m-0" />
+                                </div>
+                                <div class="rounded-bottom text-end p-4">
+                                    <a href="#" class="h4 mb-3 d-block">{{ item.title }}</a>
+                                    <p class="mb-3">{{ item.description }}</p>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">إقرأ المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    <!-- Blog End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid team py-5">
+        <div class="container pb-5">
+            <div class="pb-5 text-end">
+                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.team.subtitle }}</h4>
+                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.team.title }}</h1>
+            </div>
+            <div class="team-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                {% for member in home.team.members %}
+                <div class="team-item border rounded wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s">
+                    <div class="team-img bg-secondary rounded-top">
+                        <img src="{{ member.image }}" class="img-fluid rounded-top w-100" alt="{{ member.name }}">
+                        <div class="team-icon">
+                            {% if member.social.facebook %}
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="{{ member.social.facebook }}"><i class="fab fa-facebook-f"></i></a>
+                            {% endif %}
+                            {% if member.social.twitter %}
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="{{ member.social.twitter }}"><i class="fab fa-twitter"></i></a>
+                            {% endif %}
+                            {% if member.social.instagram %}
+                            <a class="btn btn-square btn-primary rounded-circle mx-1" href="{{ member.social.instagram }}"><i class="fab fa-instagram"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="team-content text-center p-4">
+                        <a href="#" class="h4">{{ member.name }}</a>
+                        <p class="mb-0 text-primary">{{ member.title }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5">
+        <div class="container pb-5">
+            <div class="pb-5 text-end">
+                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.testimonials.subtitle }}</h4>
+                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.testimonials.title }}</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel pt-5 wow fadeInUp" data-wow-delay="0.2s">
+                {% for item in home.testimonials.items %}
+                <div class="testimonial-item border text-center rounded">
+                    <div class="rounded-circle position-absolute" style="width: 100px; height: 100px; top: 25px; left: 50%; transform: translateX(-50%);">
+                        <img class="img-fluid rounded-circle" src="{{ item.image }}" alt="{{ item.name }}">
+                    </div>
+                    <div class="position-relative" style="margin-top: 140px;">
+                        <h5 class="mb-0">{{ item.name }}</h5>
+                        <p>{{ item.title }}</p>
+                        <div class="d-flex justify-content-center">
+                            {% for star in range(5) %}
+                            <i class="fas fa-star {% if not loop.last %}text-secondary{% endif %}"></i>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="testimonial-content p-4">
+                        <p class="fs-5 mb-0">{{ item.text }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+{% endblock %}

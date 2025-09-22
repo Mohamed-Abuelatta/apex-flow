@@ -1,0 +1,35 @@
+{
+	"home": {
+		"title": "Home",
+		"url": "/",
+		"isActive": "active"
+	},
+	"about": {
+		"title": "About",
+		"url": "/pages/about/"
+	},
+	"events": {
+		"title": "Events",
+		"url": "/pages/events/"
+	},
+	"blog": {
+		"title": "Blog",
+		"url": "/pages/blog/"
+	},
+	"classes": {
+		"title": "Our classes",
+		"url": "/pages/classes/"
+	},
+	"gallery": {
+		"title": "Gallery",
+		"url": "/pages/gallery/"
+	},
+	"team": {
+		"title": "Team",
+		"url": "/pages/team/"
+	},
+	"contact": {
+		"title": "Contact",
+		"url": "/pages/contact/"
+	}
+}

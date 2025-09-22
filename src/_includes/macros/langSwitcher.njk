@@ -1,0 +1,16 @@
+{% macro langSwitcher(currentLocale, pageUrl) %}
+  <ul>
+    <li>
+      <a href="/en{{ pageUrl | replace('/ar', '') }}" 
+         {% if currentLocale == 'en' %}class="active"{% endif %}>
+         English
+      </a>
+    </li>
+    <li>
+      <a href="/ar{{ pageUrl | replace('/en', '') }}" 
+         {% if currentLocale == 'ar' %}class="active"{% endif %}>
+         العربية
+      </a>
+    </li>
+  </ul>
+{% endmacro %}

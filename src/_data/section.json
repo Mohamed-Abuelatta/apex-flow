@@ -1,0 +1,62 @@
+{
+    "activities": [
+        {
+        "title": "...",
+        "description": "...",
+        "icon": "..."
+        },
+        {
+        "title": "...",
+        "description": "...",
+        "icon": "..."
+        }
+    ],
+    "team": [
+        {
+            "name": "...",
+            "role": "...",
+            "image": "...",
+            "feedback": "...",
+            "social": [
+                {"link": "...", "icon": "..."},
+                {"link": "...", "icon": "..."}
+            ]
+        },
+        {
+            "name": "...",
+            "role": "...",
+            "image": "...",
+            "feedback": "...",
+            "social": [
+                {"link": "...", "icon": "..."},
+                {"link": "...", "icon": "..."}
+            ]
+        }
+    ],
+    "testimonials": [
+        {
+        "name": "...",
+        "profession": "...",
+        "feedback": "...",
+        "image": "...",
+        "rating": "..."
+        },
+        {
+        "name": "...",
+        "profession": "...",
+        "feedback": "...",
+        "image": "...",
+        "rating": "..."
+        }
+    ],
+    "faqs": [
+        {
+            "question": "...",
+            "answer": "..."
+        },
+        {
+            "question": "...",
+            "answer": "..."
+        }
+    ]
+}

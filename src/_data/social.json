@@ -1,0 +1,27 @@
+{
+    "Facebook": {
+        "url": "#",
+        "icon": "fab fa-facebook-f",
+        "isActive": true
+    },
+    "Instagram": {
+        "url": "#",
+        "icon": "fab fa-instagram",
+        "isActive": true
+    },
+    "YouTube": {
+        "url": "#",
+        "icon": "fab fa-youtube",
+        "isActive": true
+    },
+    "TikTok": {
+        "url": "#",
+        "icon": "fab fa-tiktok",
+        "isActive": true
+    },
+    "Snapchat": {
+        "url": "#",
+        "icon": "fab fa-snapchat-ghost",
+        "isActive": true
+    }
+}

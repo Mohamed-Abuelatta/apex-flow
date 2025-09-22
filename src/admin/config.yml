@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main # أو master حسب الفرع الرئيسي
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
+locale: 'ar'
+collections:
+  - name: "blog"
+    label: "المقالات"
+    folder: "src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "العنوان", name: "title", widget: "string"}
+      - {label: "التاريخ", name: "date", widget: "datetime"}
+      - {label: "الوصف", name: "description", widget: "string"}
+      - {label: "الصورة المميزة", name: "featured_image", widget: "image", required: false}
+      - {label: "العلامات", name: "tags", widget: "list", default: ["مقالات"]}
+      - {label: "المحتوى", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "الصفحات"
+    files:
+      - file: "src/index.njk"
+        label: "الصفحة الرئيسية"
+        name: "home"
+        fields:
+          - {label: "العنوان", name: "title", widget: "string"}
+          - {label: "الوصف", name: "description", widget: "text"}
+          - {label: "المحتوى", name: "body", widget: "markdown"}
+      - file: "src/pages/about.njk"
+        label: "صفحة حولنا"
+        name: "about"
+        fields:
+          - {label: "العنوان", name: "title", widget: "string"}
+          - {label: "المحتوى", name: "body", widget: "markdown"}
+  - name: "settings"
+    label: "الإعدادات"
+    files:
+      - file: "src/_data/site.json"
+        label: "إعدادات الموقع"
+        name: "site_settings"
+        fields:
+          - {label: "عنوان الموقع", name: "title", widget: "string"}
+          - {label: "وصف الموقع", name: "description", widget: "text"}
+          - {label: "رابط الموقع", name: "url", widget: "string"}
+          - {label: "اسم المؤلف", name: "author", widget: "string"}
+          - {label: "اللغة", name: "language", widget: "string", default: "ar"}

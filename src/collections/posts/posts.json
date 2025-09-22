@@ -1,0 +1,5 @@
+{
+  "title": "مقالات",
+  "tags": "posts",
+  "permalink": "/pages/posts/{{ page.fileSlug }}/"
+}

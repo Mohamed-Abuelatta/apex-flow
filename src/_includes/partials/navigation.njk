@@ -1,0 +1,4 @@
+{# Navigation Menu #}
+{% for key, item in navigation %}
+    <a href="{{ item.url }}" class="nav-item nav-link {{ item.isActive }}">{{ item.title }}</a>
+{% endfor %}
