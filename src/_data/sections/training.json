@@ -1,0 +1,41 @@
+{
+  "subtitle": "برامجنا التدريبية",
+  "title": "اكتشف برامجنا المتنوعة",
+  "items": [
+    {
+      "title": "الجمباز",
+      "description": "برنامج متكامل للجمباز يشمل تدريبات قوية جدا للحركات الارضية والهوائية",
+      "image": "https://www.mensjournal.com/.image/w_3840,q_auto:good,c_fill,ar_16:9/MTk2MTM3MjEwNjQ5OTc4Mzcz/gettyimages-532416167-03652f02-1a86-4079-af22-118251f19041-c5a44fad4ca704c1bcfd481b67d27e309776b65a.jpg",
+      "buttonText": "اقرأ المزيد",
+      "buttonLink": "/programs/artistic-gymnastics"
+    },
+    {
+      "title": "السباحة",
+      "description": "تعلم السباحة بأساليبها المختلفة على يد مدربين محترفين",
+      "image": "https://www.mensjournal.com/.image/w_3840,q_auto:good,c_fill,ar_16:9/MTk2MTM3MjEwNjQ5OTc4Mzcz/gettyimages-532416167-03652f02-1a86-4079-af22-118251f19041-c5a44fad4ca704c1bcfd481b67d27e309776b65a.jpg",
+      "buttonText": "اقرأ المزيد",
+      "buttonLink": "/programs/swimming"
+    },
+    {
+      "title": "كرة السلة",
+      "description": "انضم لفريق كرة السلة وطور مهاراتك في اللعب التنافسي",
+      "image": "https://www.mensjournal.com/.image/w_3840,q_auto:good,c_fill,ar_16:9/MTk2MTM3MjEwNjQ5OTc4Mzcz/gettyimages-532416167-03652f02-1a86-4079-af22-118251f19041-c5a44fad4ca704c1bcfd481b67d27e309776b65a.jpg",
+      "buttonText": "اقرأ المزيد",
+      "buttonLink": "/programs/basketball"
+    },
+    {
+      "title": "كرة القدم",
+      "description": "تدريبات شاملة في كرة القدم لتطوير المهارات الفردية والجماعية",
+      "image": "https://www.mensjournal.com/.image/w_3840,q_auto:good,c_fill,ar_16:9/MTk2MTM3MjEwNjQ5OTc4Mzcz/gettyimages-532416167-03652f02-1a86-4079-af22-118251f19041-c5a44fad4ca704c1bcfd481b67d27e309776b65a.jpg",
+      "buttonText": "اقرأ المزيد",
+      "buttonLink": "/programs/soccer"
+    },
+    {
+      "title": "التنس",
+      "description": "دروس تنس فردية وجماعية لجميع المستويات",
+      "image": "https://www.mensjournal.com/.image/w_3840,q_auto:good,c_fill,ar_16:9/MTk2MTM3MjEwNjQ5OTc4Mzcz/gettyimages-532416167-03652f02-1a86-4079-af22-118251f19041-c5a44fad4ca704c1bcfd481b67d27e309776b65a.jpg",
+      "buttonText": "اقرأ المزيد",
+      "buttonLink": "/programs/tennis"
+    }
+  ]
+}

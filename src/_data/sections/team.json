@@ -1,0 +1,46 @@
+{
+  "subtitle": "فريق التدريب",
+  "title": "مدربونا المحترفون",
+  "members": [
+    {
+      "name": "أحمد محمد",
+      "title": "مدرب الجمباز",
+      "image": "https://t3.ftcdn.net/jpg/06/45/17/94/360_F_645179444_EtQDcQw5Mcyv1MSH25K5FrEkb3LfH5Vk.jpg",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "علي أحمد",
+      "title": "مدرب الكاليسثينيك",
+      "image": "https://img.freepik.com/premium-photo/cheerful-fitness-trainer-man-glasses-has-snowwhite-smile_96461-6347.jpg",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "محمد علي",
+      "title": "مدرب باركور",
+      "image": "https://t3.ftcdn.net/jpg/06/67/30/24/360_F_667302417_xF9PRSfTlbuWU97bMXJSXNQo52Izz3DI.jpg",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "instagram": "#"
+      }
+    },
+    {
+      "name": "ليلى كمال",
+      "title": "مدربة لياقة بدنية",
+      "image": "https://t3.ftcdn.net/jpg/05/62/09/28/360_F_562092860_mWJBNRqTg4rarfoJaSdkaLlfy1dkrP33.jpg",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "instagram": "#"
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 title: الصفحة الرئيسية
-description: ???
+description: الصفحة الرئيسية لأكاديمية القمة
 ---
 
 {% extends "layouts/home.njk" %}
@@ -12,15 +12,15 @@ description: ???
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="border bg-secondary rounded">
-                        <img src="https://www.theepicself.com/wp-content/uploads/2016/11/man-in-one-hand-handstand-in-front-of-beautiful-sunset-over-water-feeling-good.jpg" class="img-fluid w-100 rounded" alt="تدريب الجمباز والكاليسثينكس">
+                        <img src="{{ sections.about.image }}" class="img-fluid w-100 rounded" alt="تدريب الجمباز والكاليسثينكس">
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInRight" dir="rtl" data-wow-delay="0.3s">
-                    <h4 class="text-secondary sub-title fw-bold">{{ home.about.subtitle }}</h4>
-                    <h1 class="display-3 mb-4">{{ home.about.title }}</h1>
-                    <p>{{ home.about.description1 }}</p>
-                    <p class="mb-4">{{ home.about.description2 }}</p>
-                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="{{ home.about.buttonLink }}">{{ home.about.buttonText }}</a>
+                    <h4 class="text-secondary sub-title fw-bold">{{ sections.about.subtitle }}</h4>
+                    <h1 class="display-3 mb-4">{{ sections.about.title }}</h1>
+                    <p>{{ sections.about.description1 }}</p>
+                    <p class="mb-4">{{ sections.about.description2 }}</p>
+                    <!--<a class="btn btn-primary rounded-pill text-white py-3 px-5" href="{{ sections.about.buttonLink }}">{{ sections.about.buttonText }}</a>-->
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@ description: ???
     <div class="container-fluid counter-facts py-5">
         <div class="container">
             <div class="row">
-                {% for item in home.stats.items %}
+                {% for item in sections.stats.items %}
                 <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s">
                     <div class="counter">
                         <div class="counter-icon w-100 d-flex align-items-center justify-content-center">
@@ -55,8 +55,8 @@ description: ???
             <div class="pb-5">
                 <div class="row">
                     <div class="col-12 text-end">
-                        <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.training.subtitle }}</h4>
-                        <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.training.title }}</h1>
+                        <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ sections.training.subtitle }}</h4>
+                        <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ sections.training.title }}</h1>
                     </div>
                 </div>
             </div>
@@ -124,28 +124,32 @@ description: ???
     <!-- Movs Start -->
     <div class="container-fluid blog bg-light py-5">
         <div class="container pb-5">
-            <div class="pb-5 text-end">
-                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.movs.subtitle }}</h4>
-                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.movs.title }}</h1>
+            <div class="pb-5">
+                <div class="row g-4 align-items-end">
+                    <div class="col-xl-4 text-xl-start wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/pages/movs/">عرض الكل</a>
+                    </div>
+                    <div class="col-xl-8 text-end">
+                        <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">الحركات الرياضية</h4>
+                        <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">أهم الحركات التي نقدمها</h1>
+                    </div>
+                </div>
             </div>
 
             <div class="blog-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
-
-                {% for item in home.movs.items %}
+                {% for move in collections.movs | reverse -%}
                     <div class="blog-item bg-white border rounded wow fadeInUp" data-wow-delay="0.1s">
                         <div class="blog-img rounded-top">
-                            <img src="{{ item.image }}" class="img-fluid rounded-top h-100" alt="تدريبات الجمباز للمبتدئين">
+                            <img src="{{ move.data.image }}" class="img-fluid rounded-top h-100" alt="{{ move.data.title }}">
                         </div>
                         <div class="bg-light rounded-bottom p-4">
-                            <a href="#" class="h4 mb-3 d-block">{{ item.title }}</a>
-                            <p class="mb-3">{{ item.description }}</p>
-                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="{{ item.buttonLink }}">{{ item.buttonText }}</a>
+                            <a href="{{ move.url }}" class="h4 mb-3 d-block">{{ move.data.arabic_title }}</a>
+                            <p class="mb-3">{{ move.data.description }}</p>
+                            <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="{{ move.url }}">اقرأ المزيد</a>
                         </div>
                     </div>
                 {% endfor %}
-
             </div>
-
         </div>
     </div>
     <!-- Movs End -->
@@ -154,12 +158,12 @@ description: ???
     <div class="container-fluid gallery py-5">
         <div class="container pb-5">
             <div class="pb-5 text-end">
-                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.gallery.subtitle }}</h4>
-                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.gallery.title }}</h1>
+                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ sections.gallery.subtitle }}</h4>
+                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ sections.gallery.title }}</h1>
             </div>
             <div class="tab-class">
                 <ul class="nav nav-pills d-inline-flex justify-content-center pb-4">
-                    {% for tab in home.gallery.tabs %}
+                    {% for tab in sections.gallery.tabs %}
                         <li class="nav-item bg-light border border-primary rounded-pill mb-4 wow fadeInUp" data-wow-delay="0.{{ loop.index }}s">
                             <a class="d-flex py-2 px-5 rounded-pill {% if loop.first %}active{% endif %}" data-bs-toggle="pill" href="#{{ tab.id }}">
                                 <span class="text-dark">{{ tab.title }}</span>
@@ -170,26 +174,26 @@ description: ???
 
                 <div class="tab-content">
 
-                    {% for tab in home.gallery.tabs %}
+                    {% for tab in sections.gallery.tabs %}
                         <div id="{{ tab.id }}" class="tab-pane fade show {% if loop.first %}active{% endif %} p-0">
 
                             <div class="row gx-2 gy-5">
                                 
-                                {% for mov in tab.movs %}
+                                {% for video in tab.videos %}
                                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                     <div class="video h-100">
-                                    <img src="https://img.youtube.com/vi/{{ mov.youtubeId }}/hqdefault.jpg" 
+                                    <img src="https://img.youtube.com/vi/{{ video.youtubeId }}/hqdefault.jpg" 
                                         class="img-fluid rounded w-100 h-100" 
                                         style="object-fit: cover;" 
-                                        alt="{{ mov.title }}">
+                                        alt="{{ video.title }}">
                                     <button type="button" 
                                             class="btn btn-play" 
                                             data-bs-toggle="modal" 
-                                            data-src="https://www.youtube.com/embed/{{ mov.youtubeId }}" 
+                                            data-src="https://www.youtube.com/embed/{{ video.youtubeId }}" 
                                             data-bs-target="#videoModal">
                                         <span></span>
                                     </button>
-                                    <p class="text-center mt-1">{{ mov.title }}</p>
+                                    <p class="text-center mt-1">{{ video.title }}</p>
                                     </div>
                                 </div>
                                 {% endfor %}
@@ -228,25 +232,32 @@ description: ???
             <div class="container py-5">
                 <div class="pb-5">
                     <div class="row g-4 align-items-end">
-                        <div class="col-12 text-end">
-                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">{{ home.blog.subtitle }}</h4>
-                            <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">{{ home.blog.title }}</h1>
+                        <div class="col-xl-4 text-xl-start wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/pages/posts/">عرض الكل</a>
                         </div>
+                        <div class="col-xl-8 text-end">
+                            <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">مقالات القمة</h4>
+                            <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">مقالاتنا الرياضية (مهمة لتطوير مستواك)</h1>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <!-- I want here to loop blog from home.json -->
-                    {% for item in home.blog.posts %}
-                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s" style="visibility: visible; animation-delay: {{ loop.index0 * 0.2 }}s; animation-name: fadeInUp;">
-                            <div class="event-item border rounded">
+                    <!-- I want here to loop blog from sections.json -->
+                    {% for post in collections.posts | reverse | range(0, 3) -%}
+                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s">
+                            <div class="event-item border rounded h-100">
                                 <div class="position-relative">
-                                    <img src="{{ item.image }}" class="img-fluid rounded-top w-100" alt="Image">
-                                    <hr class="p-0 m-0" />
+                                    <img src="{{ post.data.featured_image }}" class="img-fluid rounded-top w-100" alt="{{ post.data.title }}">
+                                    <div class="blog-date position-absolute py-1 px-2">{{ post.date | date("DD MMM YYYY") }}</div>
                                 </div>
                                 <div class="rounded-bottom text-end p-4">
-                                    <a href="#" class="h4 mb-3 d-block">{{ item.title }}</a>
-                                    <p class="mb-3">{{ item.description }}</p>
-                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="#">إقرأ المزيد</a>
+                                    <div class="mb-2 text-primary">
+                                        <small><i class="fa fa-user me-2"></i>{{ post.data.author }}</small>
+                                    </div>
+                                    <a href="{{ post.url }}" class="h4 d-block mb-3">{{ post.data.title }}</a>
+                                    <p class="mb-3">{{ post.data.description }}</p>
+                                    <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="{{ post.url }}">إقرأ المزيد</a>
                                 </div>
                             </div>
                         </div>
@@ -260,11 +271,11 @@ description: ???
     <div class="container-fluid team py-5">
         <div class="container pb-5">
             <div class="pb-5 text-end">
-                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.team.subtitle }}</h4>
-                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.team.title }}</h1>
+                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ sections.team.subtitle }}</h4>
+                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ sections.team.title }}</h1>
             </div>
             <div class="team-carousel owl-carousel pt-5 wow fadeInUp" data-wow-delay="0.1s">
-                {% for member in home.team.members %}
+                {% for member in sections.team.members %}
                 <div class="team-item border rounded wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s">
                     <div class="team-img bg-secondary rounded-top">
                         <img src="{{ member.image }}" class="img-fluid rounded-top w-100" alt="{{ member.name }}">
@@ -295,11 +306,11 @@ description: ???
     <div class="container-fluid testimonial py-5">
         <div class="container pb-5">
             <div class="pb-5 text-end">
-                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ home.testimonials.subtitle }}</h4>
-                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ home.testimonials.title }}</h1>
+                <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">{{ sections.testimonials.subtitle }}</h4>
+                <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">{{ sections.testimonials.title }}</h1>
             </div>
             <div class="owl-carousel testimonial-carousel pt-5 wow fadeInUp" data-wow-delay="0.2s">
-                {% for item in home.testimonials.items %}
+                {% for item in sections.testimonials.items %}
                 <div class="testimonial-item border text-center rounded">
                     <div class="rounded-circle position-absolute" style="width: 100px; height: 100px; top: 25px; left: 50%; transform: translateX(-50%);">
                         <img class="img-fluid rounded-circle" src="{{ item.image }}" alt="{{ item.name }}">
@@ -323,4 +334,4 @@ description: ???
     </div>
     <!-- Testimonial End -->
 
-{% endblock %}
+    {% endblock %}

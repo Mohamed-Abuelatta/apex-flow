@@ -1,0 +1,38 @@
+---
+title: الحركات
+breadcrumb:
+- { label: "الرئيسية", url: "/" }
+- { label: "الحركات", url: "/pages/movs/" }
+permalink: "/pages/movs/"
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/page.njk" %}
+{% block pageContent %}
+
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row g-4">
+            {% for move in collections.movs | reverse %}
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s">
+                <div class="blog-item border rounded h-100">
+                    <div class="blog-img rounded-top">
+                        <img src="{{ move.data.image }}" class="img-fluid rounded-top h-100" alt="{{ move.data.title }}">
+                    </div>
+                    <div class="bg-light rounded-bottom p-4">
+                        <a href="{{ move.url }}" class="h4 mb-3 d-block">{{ move.data.title }}</a>
+                        <p class="mb-3">{{ move.data.description }}</p>
+                        <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="{{ move.url }}">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="col-12 text-center">
+                <p>لا توجد حركات متاحة حالياً</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

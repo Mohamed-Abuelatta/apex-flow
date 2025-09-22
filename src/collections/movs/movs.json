@@ -1,0 +1,5 @@
+{
+  "title": "الحركات",
+  "tags": "movs",
+  "permalink": "/pages/movs/{{ page.fileSlug }}/"
+}

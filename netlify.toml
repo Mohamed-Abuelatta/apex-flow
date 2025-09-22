@@ -5,7 +5,7 @@
   NODE_VERSION = "18"
 # إعدادات الأمان
 [context.production.environment]
-  NETLIFY_SITE_URL = "https://tartil-quran.netlify.app"
+  NETLIFY_SITE_URL = "https://apex-flow.netlify.app"
 # إعدادات الأمان
 [[headers]]
   for = "/admin/*"

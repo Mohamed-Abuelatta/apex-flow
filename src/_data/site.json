@@ -1,22 +1,22 @@
 {
   "title": "Apex-Flow Academy",
-  "description": "A specialized center for teaching and training gymnastics for children and youth with the latest methods and equipment",
-  "tagline": "Towards the peak in the world of gymnastics",
-  "keywords": "gymnastics, gymnastics training, gymnastics academy, sports, fitness, kids gymnastics, artistic gymnastics",
-  "about": "Apex Flow Academy is a specialized center for teaching and training gymnastics at all levels. We provide comprehensive training programs led by professional coaches in a safe environment equipped with the latest equipment.",
-  "vision": "To be the first destination for gymnastics education and producing future champions",
-  "mission": "Providing the highest levels of gymnastics training and building the capabilities of new generations in this beautiful sport",
+  "description": "مركز متخصص في تعليم وتدريب الجمباز من سن الاطفال الى الشباب بأحدث الأساليب والمعدات",
+  "tagline": "طور نفسك ... انطلق نحو القمة",
+  "keywords": "جمباز، تدريب جمباز، أكاديمية جمباز، رياضة، لياقة بدنية، جمباز أطفال، جمباز فني",
+  "about": "أكاديمية القمة هي مركز متخصص في تعليم وتدريب الجمباز بجميع مستوياته. نقدم برامج تدريبية متكاملة على يد مدربين محترفين في بيئة آمنة ومجهزة بأحدث المعدات",
+  "vision": "أن نكون الوجهة الأولى لتعليم الجمباز وتخريج أبطال المستقبل",
+  "mission": "تقديم أعلى مستويات التدريب في الجمباز وبناء قدرات الأجيال الجديدة في هذه الرياضة الجميلة",
   "newsletter": "اشترك الان في النشرة الإخبارية لدينا لتلقي أحدث التحديثات والعروض",
   "values": [
-    "Professionalism in training",
-    "Safety first",
-    "Continuous improvement",
-    "Commitment to excellence"
+    "الاحترافية في التدريب",
+    "السلامة أولاً",
+    "التطور المستمر",
+    "الالتزام بالتميز"
   ],
-  "topic": "Gymnastics education and training",
+  "topic": "تعليم وتدريب الجمباز",
   "url": "https://apex-flow.com",
-  "author": {"name": "Abuelatta", "url": "https://wa.me/905523836514"},
-  "address": "Main office for booking and inquiries <br> Gunesli, 57th Street, Building 7, 2nd Floor",
+  "author": {"name": "أبو العطا", "url": "https://wa.me/905523836514"},
+  "address": "Main Office for Reservations and Inquiries <br />Güneşli, 57. Cadde, Bina 7, 2. Kat, <br />Bağcılar, Istanbul, Turkey",
   "phone": "+90 552 383 6514",
   "email": "info@apex-gymnastics.com",
   "social": {
@@ -26,3 +26,4 @@
     "youtube": "ApexGymnasticsAcademy"
   }
 }
+

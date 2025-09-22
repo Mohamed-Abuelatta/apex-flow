@@ -43,3 +43,7 @@ module.exports = function(eleventyConfig) {
     markdownTemplateEngine: "njk"
   };
 };
+
+eleventyConfig.addCollection("movs", function(collection) {
+    return collection.getFilteredByGlob("src/collections/movs/*.md");
+});

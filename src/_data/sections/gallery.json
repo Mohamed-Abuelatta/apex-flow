@@ -1,0 +1,157 @@
+{
+    "subtitle": "معرض الفيديوهات",
+    "title": "مقاطع فيديو تدريبية وتثقيفية",
+    "tabs": [
+      {
+        "id": "GalleryTab-1",
+        "title": "انواع الحركات",
+        "videos": [
+          {
+            "title": "flares",
+            "youtubeId": "Py3qBIx0Mys"
+          },
+          {
+            "title": "human flag",
+            "youtubeId": "7EBd-Z3SYZ4"
+          },
+          {
+            "title": "airflare",
+            "youtubeId": "lGtnbkQazUM"
+          },
+          {
+            "title": "back flip",
+            "youtubeId": "SIhdxEMjDe4"
+          },
+          {
+            "title": "front flip",
+            "youtubeId": "f_KOsS3rqa4"
+          },
+          {
+            "title": "side flip",
+            "youtubeId": "fccqo1skxM0"
+          },
+          {
+            "title": "back lever",
+            "youtubeId": "ayrnX1-2coc"
+          },
+          {
+            "title": "front lever",
+            "youtubeId": "dNIYHUkmElo"
+          },
+          {
+            "title": "handstand push ups",
+            "youtubeId": "q5sbqedk5tc"
+          },
+          {
+            "title": "hand hops",
+            "youtubeId": "hmgJouRerNw"
+          }
+        ]
+      },
+      {
+        "id": "GalleryTab-2",
+        "title": "افضل اللاعبين",
+        "videos": [
+          {
+            "title": "Leo Wang",
+            "youtubeId": "bU7Ue4xF3YI"
+          },
+          {
+            "title": "ERIK BARSI",
+            "youtubeId": "JTlBmupykGM"
+          },
+          {
+            "title": "Chris Heria",
+            "youtubeId": "QidphSRzMzo"
+          },
+          {
+            "title": "Frank Medrano",
+            "youtubeId": "mvJHw64fxgQ"
+          },
+          {
+            "title": "RAFAEL MOTLOCH",
+            "youtubeId": "nKN5uMLUoDU"
+          },
+          {
+            "title": "David Laid",
+            "youtubeId": "7wjAa2VSWZE"
+          }
+          
+        ]
+      },
+      {
+        "id": "GalleryTab-3",
+        "title": "جلسات تدريبية",
+        "videos": [
+          {
+            "title": "تقويات العضلات بوزن الجسم",
+            "youtubeId": "FlwDAZ7SSwY"
+          },
+          {
+            "title": "تمارين اساسيات الكاليسثينيكس",
+            "youtubeId": "sxCeGmVWNw0"
+          },
+          {
+            "title": "تمارين المرونة والاستطالة",
+            "youtubeId": "L_xrDAtykMI"
+          },
+          {
+            "title": "كارديو هيت",
+            "youtubeId": "FwWf1KLM3ro"
+          },
+          {
+            "title": "التمارين بالحبل",
+            "youtubeId": "Yo30WJ2dSpg"
+          },
+          {
+            "title": "التمارين بالمطاط",
+            "youtubeId": "hQ2lHMP4kco"
+          },
+          {
+            "title": "تمارين ايزوميتريك",
+            "youtubeId": "PkCTpBaj-AA"
+          }
+        ]
+      },
+      {
+        "id": "GalleryTab-4",
+        "title": "تحفيز",
+        "videos": [
+          {
+            "title": "",
+            "youtubeId": "oEbHG65l2Kw"
+          },
+          {
+            "title": "",
+            "youtubeId": "Y5RtQ4cawVk"
+          },
+          {
+            "title": "",
+            "youtubeId": "uNN62f55EV0"
+          },
+          {
+            "title": "",
+            "youtubeId": "ruX4Le0kBng"
+          }
+        ]
+      },
+      {
+        "id": "GalleryTab-5",
+        "title": "الفعاليات",
+        "videos": [
+          {
+            "title": "بطولة ريد بول",
+            "youtubeId": "N6C--ej2WN0"
+          },
+          {
+            "title": "يوم الاطفال",
+            "youtubeId": "9MgJpTSrX4g"
+          },
+          {
+            "title": "تمارين الشارع",
+            "youtubeId": "tqSzWuzCzt4" 
+          }
+        ]
+      }
+    ]
+  }

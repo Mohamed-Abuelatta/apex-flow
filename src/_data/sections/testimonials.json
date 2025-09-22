@@ -1,0 +1,24 @@
+{
+    "subtitle": "آراء المتدربين",
+    "title": "ماذا يقول متدربونا",
+    "items": [
+      {
+        "name": "احمد خليل",
+        "title": "متدرب 20 سنة",
+        "image": "/assets/img/person/person-m-7.webp",
+        "text": "تجربة رائعة مع مدربين محترفين. تطورت مهاراتي بشكل ملحوظ"
+      },
+      {
+        "name": "سلوى علي",
+        "title": "متدربة 12 سنة",
+        "image": "https://img.freepik.com/premium-photo/beautiful-young-woman-white-tshirt-smiling_979387-75.jpg",
+        "text": "بيئة تدريبية ممتازة ومعدات حديثة. أنصح بشدة بالانضمام"
+      },
+      {
+        "name": "نورا محمد",
+        "title": "متدربة 30 سنة",
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1b15c2ad299fdcf864a09742",
+        "text": "برامج متنوعة تناسب جميع المستويات. استفدت كثيراً من التدريبات"
+      }
+    ]
+  }
