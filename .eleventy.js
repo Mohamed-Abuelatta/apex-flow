@@ -44,6 +44,3 @@ module.exports = function(eleventyConfig) {
   };
 };
 
-eleventyConfig.addCollection("movs", function(collection) {
-    return collection.getFilteredByGlob("src/collections/movs/*.md");
-});
