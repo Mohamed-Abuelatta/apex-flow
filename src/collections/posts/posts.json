@@ -1,5 +1,6 @@
 {
   "title": "مقالات",
+  "layout": "layouts/page.njk",
   "tags": "posts",
   "permalink": "/pages/posts/{{ page.fileSlug }}/"
 }

@@ -1,5 +1,6 @@
 {
   "title": "الحركات",
+  "layout": "layouts/page.njk",
   "tags": "movs",
   "permalink": "/pages/movs/{{ page.fileSlug }}/"
 }

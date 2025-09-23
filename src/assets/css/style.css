@@ -1,3 +1,4 @@
+/*** my edits ***/
 :root { 
     --bs-primary: #4b389f;
     --bs-secondary: #f28b00;
@@ -8,7 +9,14 @@
 .footer {
     background: #f28b00 !important;
 }
-
+.page-header {
+    background-image: url(https://t3.ftcdn.net/jpg/01/19/59/74/360_F_119597487_SnvLBdheEGOxu05rMQ5tCzo250cRrTz9.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000000;
+}
+/*** my edits end ***/
 
 /*** Spinner Start ***/
 /*** Spinner ***/

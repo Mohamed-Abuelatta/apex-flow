@@ -130,8 +130,8 @@ description: الصفحة الرئيسية لأكاديمية القمة
                         <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="/pages/movs/">عرض الكل</a>
                     </div>
                     <div class="col-xl-8 text-end">
-                        <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">الحركات الرياضية</h4>
-                        <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">أهم الحركات التي نقدمها</h1>
+                        <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s">المهارات الرياضية</h4>
+                        <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s">أهم المهارات التي نقدمها</h1>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@ description: الصفحة الرئيسية لأكاديمية القمة
                         </div>
                         <div class="col-xl-8 text-end">
                             <h4 class="text-secondary sub-title fw-bold wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">مقالات القمة</h4>
-                            <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">مقالاتنا الرياضية (مهمة لتطوير مستواك)</h1>
+                            <h1 class="display-2 mb-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">اّخر مقالاتنا الرياضية</h1>
                         </div>
                     </div>
                     </div>
@@ -248,13 +248,13 @@ description: الصفحة الرئيسية لأكاديمية القمة
                         <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="{{ loop.index0 * 0.2 }}s">
                             <div class="event-item border rounded h-100">
                                 <div class="position-relative">
-                                    <img src="{{ post.data.featured_image }}" class="img-fluid rounded-top w-100" alt="{{ post.data.title }}">
-                                    <div class="blog-date position-absolute py-1 px-2">{{ post.date | date("DD MMM YYYY") }}</div>
-                                </div>
-                                <div class="rounded-bottom text-end p-4">
-                                    <div class="mb-2 text-primary">
+                                    <img src="{{ post.data.featured_image }}" class="img-fluid rounded-top border-bottom w-100" alt="{{ post.data.title }}">
+                                    <div class="blog-date d-flex justify-content-between p-2 mt-2 text-primary">
+                                        <small>{{ post.date | date("dd/MM/yyyy") }}</small>
                                         <small><i class="fa fa-user me-2"></i>{{ post.data.author }}</small>
                                     </div>
+                                </div>
+                                <div class="rounded-bottom text-end px-4 pb-4">
                                     <a href="{{ post.url }}" class="h4 d-block mb-3">{{ post.data.title }}</a>
                                     <p class="mb-3">{{ post.data.description }}</p>
                                     <a class="btn btn-primary rounded-pill text-white py-2 px-4" href="{{ post.url }}">إقرأ المزيد</a>
